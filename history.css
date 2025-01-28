@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --tertiary-color: #dfdede;
+    --background-color: #f0f0f0;
+}
+
+.score-container {
+    width: 90%;
+    max-width: 600px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.score-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.score-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background: var(--tertiary-color);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.score-item:nth-child(odd) {
+    background: var(--background-color);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.clear-button {
+    background-color: #e74c3c;
+}
+
+.clear-button:hover {
+    background-color: #c0392b;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}

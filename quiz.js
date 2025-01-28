@@ -85,6 +85,8 @@ function render(quiz, currentQuestion, score, questionsNumber) {
       if (currentQuestion < questionsNumber) {
         render(quiz, currentQuestion, score, questionsNumber);
       } else {
+        score = (score * 100) / questionsNumber;
+        saveScore(score);
         alert("You have completed the quiz! Your score is: " + score);
         window.location.href = "index.html";
       }
@@ -98,4 +100,15 @@ function shuffle(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
+}
+
+function saveScore(score) {
+  // Retrieve existing scores or initialize an empty array
+  const scores = JSON.parse(localStorage.getItem("quizScores")) || [];
+
+  // Add the new score to the array
+  scores.push(score);
+
+  // Save the updated array back to localStorage
+  localStorage.setItem("quizScores", JSON.stringify(scores));
 }

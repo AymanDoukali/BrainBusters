@@ -46,3 +46,7 @@ customStartButton.addEventListener("click", () => {
   localStorage.setItem("quizURL", URL); // Store URL in localStorage
   window.location.href = "quiz.html";
 });
+
+historyButton.addEventListener("click", () => {
+  window.location.href = "history.html";
+});
