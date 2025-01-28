@@ -86,7 +86,7 @@ function render(quiz, currentQuestion, score, questionsNumber) {
         render(quiz, currentQuestion, score, questionsNumber);
       } else {
         alert("You have completed the quiz! Your score is: " + score);
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
       }
     });
   }

@@ -7,7 +7,7 @@ let URL = "https://opentdb.com/api.php?amount=10";
 
 classicButton.addEventListener("click", () => {
   localStorage.setItem("quizURL", URL); // Store URL in localStorage
-  window.location.href = "/quiz.html";
+  window.location.href = "quiz.html";
 });
 
 customButton.addEventListener("click", () => {
@@ -44,5 +44,5 @@ customStartButton.addEventListener("click", () => {
   }
   console.log(URL);
   localStorage.setItem("quizURL", URL); // Store URL in localStorage
-  window.location.href = "/quiz.html";
+  window.location.href = "quiz.html";
 });
