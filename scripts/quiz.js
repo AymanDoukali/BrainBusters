@@ -90,7 +90,7 @@ function render(quiz, currentQuestion, score, questionsNumber) {
         setTimeout(() => {
           alert("You have completed the quiz! Your score is: " + finalScore);
           window.location.href = "../index.html";
-        }, 100);
+        }, 50);
       }
     });
   }
