@@ -32,7 +32,7 @@ BrainBusters est une application web de quiz permettant aux utilisateurs de test
 - **OpenTDB API** : Source des questions de quiz.
 - **LocalStorage** : Stockage temporaire des scores et des paramètres du quiz.
 
-# Guide de démarrage rapide
+## Guide de démarrage rapide
 
 ### Option 1 : Utiliser le serveur HTTP intégré de Python
 
