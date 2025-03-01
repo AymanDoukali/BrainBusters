@@ -37,7 +37,7 @@ document
   .getElementById("clear-history")
   .addEventListener("click", clearHistory);
 document.getElementById("back-home").addEventListener("click", () => {
-  window.location.href = "index.html"; // Adjust this to your home page URL
+  window.location.href = "../index.html"; // Adjust this to your home page URL
 });
 
 // Render scores on page load

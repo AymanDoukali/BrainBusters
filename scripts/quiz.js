@@ -85,10 +85,12 @@ function render(quiz, currentQuestion, score, questionsNumber) {
       if (currentQuestion < questionsNumber) {
         render(quiz, currentQuestion, score, questionsNumber);
       } else {
-        score = (score * 100) / questionsNumber;
-        saveScore(score);
-        alert("You have completed the quiz! Your score is: " + score);
-        window.location.href = "index.html";
+        const finalScore = (score * 100) / questionsNumber;
+        saveScore(finalScore);
+        setTimeout(() => {
+          alert("You have completed the quiz! Your score is: " + finalScore);
+          window.location.href = "../index.html";
+        }, 100);
       }
     });
   }
